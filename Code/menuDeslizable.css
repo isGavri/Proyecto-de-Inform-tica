@@ -1,0 +1,45 @@
+#slider {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#slider .item {
+    width: 40vmin;
+    height: 40vmin;
+    box-shadow: 0 0 8px 5px rgb(67, 64, 64);
+    position: relative;
+    display: inline-block;
+    vertical-align: auto;
+    border-radius: 10%;  
+    transition: 1s all;  
+}
+#slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;    
+    position: relative;
+        
+}
+
+#slider .item h3 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    color: #edede9;
+    background: #a5a1a1;
+    backdrop-filter: blur(5px);     
+    border-radius: 15%;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#slider .item:hover {
+    transform: scale(105%);
+}
