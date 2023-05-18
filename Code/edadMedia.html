@@ -7,151 +7,216 @@
     <title>Edad Media</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      .home-section {
+        background: url(imagenes/edadMedia.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }      
+      #wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto auto; 
+        padding: 30px;       
+      }
+      .container {
+        width: 200px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        border-radius: 10%;
+        float: left;
+        padding: 25px;
+        box-shadow: 0px 0px 8px 5px rgba(41,41,41,0.6);
+        margin-top: 15px;
+      }
+      .container p {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+      }
+    </style>
 </head>
 <body>
-    <div class="sidebar close">
-        <ul class="nav-links">
-            <li>
-                <a href="Index.html">
-                    <i class='icon' style="background-image: url(imagenes/menuImage.jpg); background-size: cover; transform: scale(90%);"></i>
-                    <span class="link_name">Menu</span>
-              </a>
-              <ul class="sub-menu blank">
-                    <li><a class="link_name" href="Index.html">Menu</a></li>
-              </ul>
-            </li>
-            <li>
-                <a href="prehistoria.html">
-                    <i class='icon' style="background-image: url(imagenes/prehistory.png); background-size: cover; transform: scale(90%);"></i>
-                    <span class="link_name">Prehistoria</span>
-                    </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="prehistoria.html">Prehistoria</a></li>
-                </ul>
-             </li>
-             <li>
-                <a href="edadMedia.html">
-                    <i class='icon' style="background-image: url(imagenes/edadMedia.jpg); background-size: cover; transform: scale(90%);"></i>
-                    <span class="link_name">Edad Media</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="edadMedia.html">Edad Media</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="renacimiento.html">
-                    <i class='icon' style="background-image: url(imagenes/renacimiento.jpg); background-size: cover; transform: scale(90%);"></i>
-                    <span class="link_name">Barroco</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="renacimiento.html">Barroco</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/classicism.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">Clasicismo</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Clasicismo</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/romanticism.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">Romanticismo</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Romanticismo</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/impresionismmo.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">Impresionismo</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Impresionismo</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/contemporanea.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">Contemporánea</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">Contemporánea</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/before60.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">60's</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">60's</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/60s.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">60's  70's</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">60's - 70's</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/80s90s.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">80's 90's</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">80's - 90's</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/2000s.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">2000s</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">2000s</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/edm.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">2010s</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">2010s</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="">
-                  <i class='icon' style="background-image: url(imagenes/2020s.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">2020s</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">2020s</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="2020.html">
-                  <i class='icon' style="background-image: url(imagenes/2020s.jpg); background-size: cover; transform: scale(90%);"></i>
-                  <span class="link_name">2020</span>
-                </a>
-                <ul class="sub-menu blank">
-                  <li><a class="link_name" href="#">2020</a></li>
-                </ul>
-              </li>
+  <div class="sidebar close">
+    <ul class="nav-links">
+        <li>
+            <a href="Index.html">
+                <i class='icon' style="background-image: url(imagenes/menuImage.jpg); background-size: cover; transform: scale(90%);"></i>
+                <span class="link_name">Menu</span>
+          </a>
+          <ul class="sub-menu blank">
+                <li><a class="link_name" href="Index.html">Menu</a></li>
           </ul>
-    </div>
+        </li>
+        <li>
+            <a href="prehistoria.html">
+                <i class='icon' style="background-image: url(imagenes/prehistory.png); background-size: cover; transform: scale(90%);"></i>
+                <span class="link_name">Prehistoria</span>
+                </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="prehistoria.html">Prehistoria</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="edadMedia.html">
+                <i class='icon' style="background-image: url(imagenes/edadMedia.jpg); background-size: cover; transform: scale(90%);"></i>
+                <span class="link_name">Edad Media</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="edadMedia.html">Edad Media</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="renacimiento.html">
+                <i class='icon' style="background-image: url(imagenes/renacimiento.jpg); background-size: cover; transform: scale(90%);"></i>
+                <span class="link_name">Renacimiento</span>
+            </a>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="renacimiento.html">Renacimiento</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="barrroco.html">
+              <i class='icon' style="background-image: url(imagenes/barroco.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">Barroco</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="barrroco.html">Barroco</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="clasicismo.html">
+              <i class='icon' style="background-image: url(imagenes/classicism.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">Clasicismo</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="clasicismo.html">Clasicismo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="romanticismo.html">
+              <i class='icon' style="background-image: url(imagenes/romanticism.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">Romanticismo</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="romanticismo.html">Romanticismo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="impresionismo.html">
+              <i class='icon' style="background-image: url(imagenes/impresionismmo.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">Impresionismmo</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="impresionismo.html">Impresionismmo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contemporanea.html">
+              <i class='icon' style="background-image: url(imagenes/contemporanea.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">Contemporánea</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="contemporanea.html">Contemporánea</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="before60s.html">
+              <i class='icon' style="background-image: url(imagenes/before60.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">60's</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="before60s.html">60's</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="60n70.html">
+              <i class='icon' style="background-image: url(imagenes/60s.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">60's 70's</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="60n70.html">60's - 70's</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="80n90.html">
+              <i class='icon' style="background-image: url(imagenes/80s90s.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">80's 90's</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="80n90.html">80's - 90's</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="2000.html">
+              <i class='icon' style="background-image: url(imagenes/2000s.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">2000s</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="2000.html">2000s</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="2010.html">
+              <i class='icon' style="background-image: url(imagenes/edm.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">2010s</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="2010.html">2010s</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="2020.html">
+              <i class='icon' style="background-image: url(imagenes/2020s.jpg); background-size: cover; transform: scale(90%);"></i>
+              <span class="link_name">2020s</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="2020.html">2020s</a></li>
+            </ul>
+          </li>
+      </ul>
+</div>
     <main class="home-section">
         <div class="home-content">
             <i class='bx bx-menu' ></i>
             <span class="text">Edad Media</span>
+        </div>
+
+        <div id="wrapper">
+
+          <div class="container"><p>
+            La música en la Edad Media abarca un período de tiempo que va desde el siglo V hasta el siglo XV. 
+            Durante este tiempo, la música desempeñó un papel fundamental en la vida cotidiana y en la expresión cultural de la sociedad medieval.
+          </p></div>
+
+          <div class="container"><p>
+            En la Edad Media, la música estaba estrechamente ligada a la iglesia y la religión. 
+            El canto gregoriano fue la forma musical más prominente en la música sacra. Se caracterizaba por melodías monofónicas y se utilizaba en la liturgia cristiana.
+          </p></div>
+
+          <div class="container"><p>
+            Además del canto gregoriano, surgieron formas polifónicas de música durante la Edad Media.
+            La polifonía implica la combinación de múltiples líneas melódicas que se entrelazan entre sí.
+          </p></div>
+
+          <div class="container"><p>
+            Fuera de la música religiosa, también existía la música en la Edad Media. Se usaba en festivales, danzas y entretenimientos.
+            Se componían e interpretaban canciones de amor, caballería y eventos históricos.
+          </p></div>
+
+          <div class="container"><p>
+            Los instrumentos musicales en la Edad Media incluían una variedad de instrumentos de cuerda, viento y percusión.
+            Entre ellos se encontraban la vihuela, el laúd, la flauta, la cítara y la percusión como tambores y campanas.
+          </p></div>
+
+          <div class="container"><p>
+            Puedes leer más sobre la música de la Edad media en este <span><a target="_blank" href="https://www.unprofesor.com/musica/la-musica-en-la-edad-media-resumen-y-caracteristicas-3910.html">artículo</a></span>
+          </p></div>
+
         </div>
     </main>
     <script src="sidebar.js"></script>

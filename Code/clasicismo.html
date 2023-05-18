@@ -5,45 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clasicismo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+       .home-section {
+        background: url(imagenes/classicism.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>
-            Clasicismo
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Menú</a></li>
-                <li><a href="prehistoria.html">Prehistoria y Edad Antigua</a></li>
-                <li><a href="edadMedia.html">Edad media</a></li>
-                <li><a href="renacimiento.html">Renacimiento</a></li>
-                <li><a href="barrroco.html">Barroco</a></li>
-                <li><a href="clasicismo.html">Clasicismo</a></li>
-                <li><a href="romanticismo.html">Romanticismo</a></li>
-                <li><a href="impresionismo.html">Impresionismo</a></li>
-                <li><a href="neoclasico.html">Neoclásico</a></li>
-                <li><a href="contemporanea.html">Contemporánea</a></li>
-                <li><a href="before60s.html">Antes de los 60´s</a></li>
-                <li><a href="60n70.html">60´s y 70´s</a></li>
-                <li><a href="80n90.html">80´s y 90´s</a></li>
-                <li><a href="2000.html">2000</a></li>
-                <li><a href="2010.html">2010</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <p>
-            Es el estilo caracterizado por la transición de la música barroca hacia una música equilibrada entre estructura y melodía. Ocupa la segunda mitad del siglo xviii. Franz Joseph Haydn, Wolfgang Amadeus Mozart y Ludwig van Beethoven son tres de sus representantes más destacados
-        </p>
-        <h2>
-            Compositores importantes
-        </h2>
-        <p>
-            Carl Philipp Emanuel Bach (1714-1788), fue un músico y compositor alemán. Es a menudo referido como C. P. E. Bach. Está considerado uno de los fundadores del estilo clásico y uno de los compositores más importantes del periodo galante, aparte de ser el último gran maestro del clave hasta el siglo xx. Carl Philipp Emanuel Bach compuso veintidós Pasiones, dos oratorios, diecinueve sinfonías, quince conciertos, unas doscientas obras de cámara y diversas piezas para teclado, canciones e himnos.
-            Franz Joseph Haydn (1732-1809), compositor austriaco, una de las figuras más influyentes en el desarrollo de la música del clasicismo (c. 1750-1820). En 1755 trabajó para el barón Karl Josef von Fürnberg, época en que compuso sus primeros cuartetos para cuerda. En 1759 fue nombrado director musical del conde Fernando Maximilian von Morzin. Desde 1761 hasta su muerte, trabajó al servicio de los príncipes Esterhazy ―primero Paul Anton y luego Nikolaus―, donde tuvo a su disposición una de las mejores orquestas de Europa.
-            Wolfgang Amadeus Mozart (1756-1791), compositor austriaco del periodo clásico. Uno de los más grandes e influyentes en la historia de la música occidental. Estudió con Leopold Mozart, su padre, conocido violinista y compositor, que trabajaba en la orquesta de la corte del arzobispo de Salzburgo. Desde pequeño fue niño prodigio y un genio musical. Se dice que era el compositor perfecto, debido a que en sus borradores casi no se detectaba error alguno. Se caracterizaba por su estilo sencillo, claro y equilibrado, aunque sin huir de la intensidad emocional. En su enorme producción musical (más de 600 obras, a pesar de su corta vida) destacan, entre muchos otros géneros musicales, sus conciertos para piano y sus óperas.
-            Ludwig van Beethoven (1770-1827), compositor alemán, considerado uno de los más grandes de la cultura occidental. Se formó en un ambiente propicio para el desarrollo de sus facultades aunque excesivamente rígido. Sus primeros brotes de talento musical fueron dirigidos de forma tiránica por la disciplina de su padre, que era tenor en la capilla de la corte. En 1789 Beethoven comenzó a trabajar como músico de la corte para mantener a su familia. Sus primeras obras bajo la tutela del compositor alemán Christian Gottlob Neefe, especialmente la cantata fúnebre por la muerte del emperador José II, mostraban ya una gran inteligencia, y se pensó en la posibilidad de que se fuera a Viena para estudiar con Wolfgang Amadeus Mozart. Aunque la muerte de Mozart en 1791 hizo que estos planes no pudieran realizarse, Beethoven marchó a Viena en el año 1792 para estudiar con el compositor austriaco Joseph Haydn. Beethoven ha sido reconocido tanto por sus principios clásicos como por su libertad de expresión, por lo que se le sitúa como el último de los clásicos y el primero de los románticos.
-        </p>
-    </main>
+    <div class="sidebar close">
+        <ul class="nav-links">
+            <li>
+                <a href="Index.html">
+                    <i class='icon' style="background-image: url(imagenes/menuImage.jpg); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Menu</span>
+              </a>
+              <ul class="sub-menu blank">
+                    <li><a class="link_name" href="Index.html">Menu</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="prehistoria.html">
+                    <i class='icon' style="background-image: url(imagenes/prehistory.png); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Prehistoria</span>
+                    </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="prehistoria.html">Prehistoria</a></li>
+                </ul>
+             </li>
+             <li>
+                <a href="edadMedia.html">
+                    <i class='icon' style="background-image: url(imagenes/edadMedia.jpg); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Edad Media</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="edadMedia.html">Edad Media</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="renacimiento.html">
+                    <i class='icon' style="background-image: url(imagenes/renacimiento.jpg); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Renacimiento</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="renacimiento.html">Renacimiento</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="barrroco.html">
+                  <i class='icon' style="background-image: url(imagenes/barroco.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Barroco</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="barrroco.html">Barroco</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="clasicismo.html">
+                  <i class='icon' style="background-image: url(imagenes/classicism.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Clasicismo</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="clasicismo.html">Clasicismo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="romanticismo.html">
+                  <i class='icon' style="background-image: url(imagenes/romanticism.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Romanticismo</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="romanticismo.html">Romanticismo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="impresionismo.html">
+                  <i class='icon' style="background-image: url(imagenes/impresionismmo.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Impresionismmo</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="impresionismo.html">Impresionismmo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="contemporanea.html">
+                  <i class='icon' style="background-image: url(imagenes/contemporanea.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Contemporánea</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="contemporanea.html">Contemporánea</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="before60s.html">
+                  <i class='icon' style="background-image: url(imagenes/before60.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">60's</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="before60s.html">60's</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="60n70.html">
+                  <i class='icon' style="background-image: url(imagenes/60s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">60's 70's</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="60n70.html">60's - 70's</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="80n90.html">
+                  <i class='icon' style="background-image: url(imagenes/80s90s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">80's 90's</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="80n90.html">80's - 90's</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="2000.html">
+                  <i class='icon' style="background-image: url(imagenes/2000s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">2000s</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="2000.html">2000s</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="2010.html">
+                  <i class='icon' style="background-image: url(imagenes/edm.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">2010s</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="2010.html">2010s</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="2020.html">
+                  <i class='icon' style="background-image: url(imagenes/2020s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">2020s</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="2020.html">2020s</a></li>
+                </ul>
+              </li>
+          </ul>
+    </div>
+        <main class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu' ></i>
+                <span class="text">Clasicismo</span>
+            </div>
+            <div id="wrapper">
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container c3"></div>
+            </div>
+            <p>
+                Carl Philipp Emanuel Bach (1714-1788), fue un músico y compositor alemán. Es a menudo referido como C. P. E. Bach. Está considerado uno de los fundadores del estilo clásico y uno de los compositores más importantes del periodo galante, aparte de ser el último gran maestro del clave hasta el siglo xx. Carl Philipp Emanuel Bach compuso veintidós Pasiones, dos oratorios, diecinueve sinfonías, quince conciertos, unas doscientas obras de cámara y diversas piezas para teclado, canciones e himnos.
+                Franz Joseph Haydn (1732-1809), compositor austriaco, una de las figuras más influyentes en el desarrollo de la música del clasicismo (c. 1750-1820). En 1755 trabajó para el barón Karl Josef von Fürnberg, época en que compuso sus primeros cuartetos para cuerda. En 1759 fue nombrado director musical del conde Fernando Maximilian von Morzin. Desde 1761 hasta su muerte, trabajó al servicio de los príncipes Esterhazy ―primero Paul Anton y luego Nikolaus―, donde tuvo a su disposición una de las mejores orquestas de Europa.
+                Wolfgang Amadeus Mozart (1756-1791), compositor austriaco del periodo clásico. Uno de los más grandes e influyentes en la historia de la música occidental. Estudió con Leopold Mozart, su padre, conocido violinista y compositor, que trabajaba en la orquesta de la corte del arzobispo de Salzburgo. Desde pequeño fue niño prodigio y un genio musical. Se dice que era el compositor perfecto, debido a que en sus borradores casi no se detectaba error alguno. Se caracterizaba por su estilo sencillo, claro y equilibrado, aunque sin huir de la intensidad emocional. En su enorme producción musical (más de 600 obras, a pesar de su corta vida) destacan, entre muchos otros géneros musicales, sus conciertos para piano y sus óperas.
+                Ludwig van Beethoven (1770-1827), compositor alemán, considerado uno de los más grandes de la cultura occidental. Se formó en un ambiente propicio para el desarrollo de sus facultades aunque excesivamente rígido. Sus primeros brotes de talento musical fueron dirigidos de forma tiránica por la disciplina de su padre, que era tenor en la capilla de la corte. En 1789 Beethoven comenzó a trabajar como músico de la corte para mantener a su familia. Sus primeras obras bajo la tutela del compositor alemán Christian Gottlob Neefe, especialmente la cantata fúnebre por la muerte del emperador José II, mostraban ya una gran inteligencia, y se pensó en la posibilidad de que se fuera a Viena para estudiar con Wolfgang Amadeus Mozart. Aunque la muerte de Mozart en 1791 hizo que estos planes no pudieran realizarse, Beethoven marchó a Viena en el año 1792 para estudiar con el compositor austriaco Joseph Haydn. Beethoven ha sido reconocido tanto por sus principios clásicos como por su libertad de expresión, por lo que se le sitúa como el último de los clásicos y el primero de los románticos.
+            </p>
+        </main>
+    </div>
+    <script src="sidebar.js"></script>
 </body>
 </html>

@@ -5,49 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barroco</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <style>
+        .home-section {
+            background: url(imagenes/barroco.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto auto; 
+        padding: 30px;       
+      }
+      .container {
+        width: 200px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        border-radius: 10%;
+        float: left;
+        padding: 25px;
+        box-shadow: 0px 0px 8px 5px rgba(41,41,41,0.6);
+        margin-top: 15px;
+      }
+      .container p {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+      }
+      audio::-webkit-media-controls-panel {
+        background-color: rgb(245, 225, 200);
+      }
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-            Barroco
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Menú</a></li>
-                <li><a href="prehistoria.html">Prehistoria y Edad Antigua</a></li>
-                <li><a href="edadMedia.html">Edad media</a></li>
-                <li><a href="renacimiento.html">Renacimiento</a></li>
-                <li><a href="barrroco.html">Barroco</a></li>
-                <li><a href="clasicismo.html">Clasicismo</a></li>
-                <li><a href="romanticismo.html">Romanticismo</a></li>
-                <li><a href="impresionismo.html">Impresionismo</a></li>
-                <li><a href="neoclasico.html">Neoclásico</a></li>
-                <li><a href="contemporanea.html">Contemporánea</a></li>
-                <li><a href="before60s.html">Antes de los 60´s</a></li>
-                <li><a href="60n70.html">60´s y 70´s</a></li>
-                <li><a href="80n90.html">80´s y 90´s</a></li>
-                <li><a href="2000.html">2000</a></li>
-                <li><a href="2010.html">2010</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <p>
-            La música barroca es el periodo musical que domina en Europa durante todo el siglo xvii y primera mitad del siguiente, siendo reemplazada por el clasicismo hacia 1750-1760. Se considera que nació en Italia y alcanzó su máximo esplendor en Alemania durante el barroco tardío. Es uno de los periodos más ricos, fértiles, creativos y revolucionarios de la historia de la música.
-            En este período se desarrollaron nuevas formas y se operaron grandes avances técnicos, tanto en la composición como en el virtuosismo; así tenemos: cromatismo, expresividad, bajo cifrado y bajo continuo, intensidad, ópera, oratorio, cantata, sonata, tocata, suite, fuga y la sinfonía.
-        </p>
-        <h2>
-            Sistema Tonal
-        </h2>
-        <p>
-            El sistema tonal fue una evolución desde los últimos maestros de la música medieval hasta su máximo esplendor desde Bach a los últimos compositores tonales del posromanticismo. En sus comienzos, se definió una armonía musical compuesta por siete asuntos distintos: las notas, los intervalos, los géneros, los sistemas de escala, los tonos, la modulación y la composición de melodías.
-        </p>
-        <h2>
-            Compositores
-        </h2>
-        
+    <div class="sidebar close">
+        <ul class="nav-links">
+            <li>
+                <a href="Index.html">
+                    <i class='icon' style="background-image: url(imagenes/menuImage.jpg); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Menu</span>
+              </a>
+              <ul class="sub-menu blank">
+                    <li><a class="link_name" href="Index.html">Menu</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="prehistoria.html">
+                    <i class='icon' style="background-image: url(imagenes/prehistory.png); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Prehistoria</span>
+                    </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="prehistoria.html">Prehistoria</a></li>
+                </ul>
+             </li>
+             <li>
+                <a href="edadMedia.html">
+                    <i class='icon' style="background-image: url(imagenes/edadMedia.jpg); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Edad Media</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="edadMedia.html">Edad Media</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="renacimiento.html">
+                    <i class='icon' style="background-image: url(imagenes/renacimiento.jpg); background-size: cover; transform: scale(90%);"></i>
+                    <span class="link_name">Renacimiento</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="renacimiento.html">Renacimiento</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="barrroco.html">
+                  <i class='icon' style="background-image: url(imagenes/barroco.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Barroco</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="barrroco.html">Barroco</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="clasicismo.html">
+                  <i class='icon' style="background-image: url(imagenes/classicism.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Clasicismo</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="clasicismo.html">Clasicismo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="romanticismo.html">
+                  <i class='icon' style="background-image: url(imagenes/romanticism.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Romanticismo</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="romanticismo.html">Romanticismo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="impresionismo.html">
+                  <i class='icon' style="background-image: url(imagenes/impresionismmo.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Impresionismmo</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="impresionismo.html">Impresionismmo</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="contemporanea.html">
+                  <i class='icon' style="background-image: url(imagenes/contemporanea.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">Contemporánea</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="contemporanea.html">Contemporánea</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="before60s.html">
+                  <i class='icon' style="background-image: url(imagenes/before60.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">60's</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="before60s.html">60's</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="60n70.html">
+                  <i class='icon' style="background-image: url(imagenes/60s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">60's 70's</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="60n70.html">60's - 70's</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="80n90.html">
+                  <i class='icon' style="background-image: url(imagenes/80s90s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">80's 90's</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="80n90.html">80's - 90's</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="2000.html">
+                  <i class='icon' style="background-image: url(imagenes/2000s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">2000s</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="2000.html">2000s</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="2010.html">
+                  <i class='icon' style="background-image: url(imagenes/edm.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">2010s</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="2010.html">2010s</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="2020.html">
+                  <i class='icon' style="background-image: url(imagenes/2020s.jpg); background-size: cover; transform: scale(90%);"></i>
+                  <span class="link_name">2020s</span>
+                </a>
+                <ul class="sub-menu blank">
+                  <li><a class="link_name" href="2020.html">2020s</a></li>
+                </ul>
+              </li>
+          </ul>
+    </div>
+    <main class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu' ></i>
+            <span class="text">Barroco</span>
+        </div>
+        <audio src="media/Suite no.1 Bach.mp3" controls loop autoplay></audio>
+        <div id="wrapper">
+            <div class="container"><p>La música barroca, que se desarrolló entre los siglos XVII y XVIII, fue un período de gran riqueza y expresividad musical. Se destacaron la ornamentación melódica y la elaboración compositiva.</p></div>
+            <div class="container"><p>La música vocal, como los oratorios y las óperas, así como la música instrumental, con nuevas formas y técnicas, experimentaron un gran avance durante esta época.</p></div>
+            <div class="container"><p>El bajo continuo y la exploración de las emociones fueron características destacadas. La música barroca dejó un legado significativo en la música clásica occidental.</p></div>
+        </div>
     </main>
+    <script src="sidebar.js"></script>
 </body>
 </html>
