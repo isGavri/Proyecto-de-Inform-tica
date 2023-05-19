@@ -8,11 +8,48 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <style>
-       .home-section {
+       body {
         background: url(imagenes/romanticism.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      #wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 20px 10px;
+      }
+      #c1 {
+        display: flex;
+        width: 100%;
+      }
+      #video {
+        margin: auto;
+      }
+      #c2 {
+        width: 200px;
+        height: 200px;
+      }
+      #c3 {
+        width: 200px;
+        height: 200px;
+      }
+      #c4 {
+        width: 200px;
+        height: 200px;
+      }
+      .container {
+        font-size: 23px;
+      }
+      #c2:hover {
+        color: aliceblue;
+      }
+      #c3:hover {
+        color: aliceblue;        
+      }
+      #c4:hover {
+        color: aliceblue;          
       }
     </style>
 </head>
@@ -161,23 +198,22 @@
                 <i class='bx bx-menu' ></i>
                 <span class="text">Romanticismo</span>
             </div>
-            <h2>
-                Principales Compositores
-            </h2>
-            <p>
-                Franz Schubert (1797-1828), compositor austriaco, gran incomprendido en su tiempo, cuyos lieder (canciones para voz solista y piano basadas en poemas alemanes) están entre las obras maestras de este género, y cuyos trabajos instrumentales son un puente entre el clasicismo y el romanticismo del siglo xix. Escribió obras para piano, música sinfónica, religiosa y numerosas óperas.
-                Félix Mendelssohn (1809-1847), compositor alemán, una de las principales figuras de comienzos del romanticismo europeo del siglo xix. A los 9 años debutó como pianista y a los 11 años interpretó su primera composición. Compuso la obertura El sueño de una noche de verano cuando tenía 17 años y la obra que contiene la famosa Marcha nupcial 17 años después. Tuvo como profesores al compositor y pianista checo Ignaz Moscheles y al compositor alemán Carl Friedrich Zelter. A Mendelssohn se le atribuye el haber redescubierto la obra de Johann Sebastián Bach, al estrenar en 1829 su Pasión según San Mateo.
-                Frédéric Chopin (1810-1849), comenzó a estudiar piano a los cuatro años. Aprendió la técnica del instrumento prácticamente de forma autodidacta, aunque más tarde estudió armonía y contrapunto en el conservatorio de la capital polaca. También fue precoz como compositor: su primera obra publicada data de 1817. Desde muy joven mantuvo estrecha relación con las altas esferas sociales, ante quienes tocaba en sus reuniones musicales. A los 20 años de edad dejó su Polonia natal en un viaje de estudios, pero nunca regresó. Su obra se caracterizó por el intimismo, la delicadeza, la facilidad melódica, y una revolucionaria técnica de ejecución. El piano fue su instrumento por excelencia, y tuvo gran popularidad e influencia en los compositores de su época.
-                Robert Schumann (1810-1856), compositor alemán del Romanticismo. Desde niño, ya demostraba sus cualidades musicales, y su padre lo apoyó durante su formación procurándole un profesor de piano. La dedicación a su carrera musical se vio truncada por la muerte de su padre, aunque posteriormente reemprendería sus estudios. Fue un brillante compositor y crítico musical, lo que le permitió descubrir a Johannes Brahms cuando era un joven de veinte años. En 1839, Robert se casó con Clara Wieck, y tuvieron ocho hijos. Finalmente, durante sus últimos años se acentuaron las depresiones, crisis, intentos de suicidios y periodos de reclusión. Murió de tifus en un sanatorio.
-                Franz Liszt (1811-1886), compositor austro-húngaro, pianista y profesor. Liszt se hizo famoso en toda Europa durante el siglo xix por su gran habilidad como intérprete. Sus contemporáneos afirmaban que era el pianista técnicamente más avanzado de su época y quizás el más grande de todos los tiempos.[2]​ También fue un importante e influyente compositor, un profesor de piano notable, un director de orquesta que contribuyó significativamente al desarrollo moderno del arte y un benefactor de otros compositores y artistas, intérpretes o ejecutantes, en particular de Richard Wagner, Hector Berlioz, Camille Saint-Saëns, Edvard Grieg y Aleksandr Borodín.
-                Richard Wagner (1813-1883), fue un compositor, director de orquesta, poeta, ensayista, dramaturgo y teórico musical alemán del Romanticismo. Destacan principalmente sus óperas (calificadas como «dramas musicales» por el propio compositor) en las que, a diferencia de otros compositores, asumió también el libreto y la escenografía.
-            </p>
-            <h2>
-                Post-Romanticismo
-            </h2>
-            <p>
-                Particularmente en la primera parte del siglo xx, muchos compositores escribieron música que fue una extensión de la música romántica del siglo xix. La armonía —salvo mayor complejidad— fue tonal, y los agrupamientos instrumentales tradicionales, como la orquesta o el cuarteto de cuerdas, se mantuvieron como los más usuales. Los músicos más representativos de este movimiento fueron Gustav Mahler, Richard Strauss y Sergey Rachmaninov, sin embargo muchos de los grandes compositores modernistas comenzaron sus carreras en este estilo tales como Bela Bartok, Igor Stravinsky y Arnold Schoenberg.
-            </p>
+            <div id="wrapper">
+                <div class="container" id="c1">
+                    <video id="video" src="media/VID-20230518-WA0000.mp4" loop controls autoplay height="300px" width="600"></video>
+                </div>
+                <div class="container" id="c2">
+                    Frédéric Chopin, comenzó a estudiar piano a los cuatro años. 
+                    Su obra se caracterizó por el intimismo, la delicadeza, la facilidad melódica, y una revolucionaria técnica de ejecución. 
+                    </div>
+                <div class="container" id="c3">
+                    Robert Schumann, compositor alemán del Romanticismo. Desde niño, ya demostraba sus cualidades musicales.
+                    Fue un brillante compositor y crítico musical.
+                </div>
+                <div class="container" id="c4">
+                    Franz Liszt, compositor austro-húngaro, pianista y profesor. Sus contemporáneos afirmaban que era el pianista técnicamente más avanzado de su época
+                </div>
+            </div>             
         </main>
         <script src="sidebar.js"></script>
 </body>

@@ -1,7 +1,7 @@
 #slider {
     display: flex;
     gap: 4vmin;
-    position: absolute;
+    position: fixed;
     left: 25%;
     top: 50%;
     transform: translate(0%, -50%);

@@ -8,11 +8,32 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <style>
-       .home-section {
+       body {
         background: url(imagenes/80s90s.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        border: ridge 8px;
+        backdrop-filter: invert(90%);
+        font-weight: bold;
+        width: 25%;
+        height: 40%;
+        margin: auto;
+        padding: 20px;
+        font-size: 150%;
+        text-align: justify;
+      }
+      .container p {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: rgba(255, 255, 255, 0.7);
       }
     </style>
 </head>
@@ -160,6 +181,22 @@
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
                 <span class="text">80's y 90's</span>
+            </div>
+            <div class="wrapper">
+                <div class="container c1">
+                    <p>
+                        En los años 80, la música popular se diversificó con géneros como el synth-pop, new wave y hip-hop. 
+                        El synth-pop utilizaba sintetizadores y cajas de ritmos, mientras que el new wave fusionaba punk y música electrónica. 
+                        Grupos destacados incluyen Depeche Mode y The Cure.
+                    </p>
+                </div>
+                <div class="container c2">
+                    <p>
+                        En los años 90, surgieron el grunge, britpop y hip-hop alternativo. 
+                        El grunge, liderado por Nirvana, Soundgarden y Pearl Jam, era un rock alternativo de Seattle.
+                        El britpop, con Oasis y Blur, fue un movimiento británico, y el hip-hop alternativo mezclaba hip-hop y rock con artistas como Beck y Eminem.
+                    </p>
+                </div>
             </div>
         </main>
         <script src="sidebar.js"></script>

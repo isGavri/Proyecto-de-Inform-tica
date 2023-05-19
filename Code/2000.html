@@ -8,11 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <style>
-       .home-section {
+       body {
         background: url(imagenes/2000s.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 25%;
+        height: 40%;
+        margin: auto;
+        padding: 20px;
+        font-size: 125%;
+        text-align: justify;
+      }
+      .container p {
+        color: rgba(255, 255, 255, 0.7);
       }
     </style>
 </head>
@@ -160,6 +178,23 @@
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
                 <span class="text">2000s</span>
+            </div>
+            <div class="wrapper">
+              <div class="container">
+                <p>
+                  Durante la década de 2000, la música popular se caracterizó por una amplia variedad de géneros y estilos.
+                  El pop adolescente liderado por artistas como Britney Spears y NSYNC dominó las listas de éxitos.
+                  Hubo un resurgimiento del rock con bandas como Green Day y Linkin Park.
+                  La música electrónica ganó popularidad gracias a artistas como Daft Punk.
+                </p>
+              </div>
+              <div class="container">
+                <p>
+                  El hip-hop también experimentó un auge con figuras destacadas como Jay-Z y Eminem. 
+                  Además, surgieron géneros como el reggaetón y el pop latino con artistas como Daddy Yankee y Shakira.
+                  En general, la década de 2000 fue una época de diversidad musical y desarrollo de distintos estilos y géneros.
+                </p>
+              </div>
             </div>
         </main>
         <script src="sidebar.js"></script>

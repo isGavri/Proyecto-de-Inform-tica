@@ -7,8 +7,10 @@
 body{
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  background-color: rgb(245, 225, 200);
+
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
 
 .sidebar{
@@ -17,10 +19,10 @@ body{
   left: 0;
   height: 100%;
   width: 260px;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
-  z-index: 100;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
   transition: all 0.5s ease;
+  z-index: 100;
 }
 .sidebar.close{
   width: 85px;
@@ -151,6 +153,7 @@ body{
   width: calc(100% - 260px);
   transition: all 0.5s ease;
   padding: 12px;
+  background-color: transparent;
 }
 .sidebar.close ~ .home-section{
   left: 78px;

@@ -8,11 +8,56 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <style>
-       .home-section {
+       body {
         background: url(imagenes/classicism.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        backdrop-filter: blur(4px);
+      }
+      #wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto auto; 
+        padding: 30px;   
+            
+      }
+      .container {
+        width: 250px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        border-radius: 10%;
+        float: left;
+        padding: 25px;
+        box-shadow: 0px 0px 8px 5px rgba(41,41,41,0.6);
+        margin-top: 15px;
+      }
+      .container p {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+      }
+      .container ul li {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        text-align: left;
+      }
+      #c3 {
+        grid-column: 1 / 4;
+        width: 122.5%;
+        height: 80%;
+        margin-top: 50px;
+        border-radius: 0 20% 0 20%;
+      }
+      #c2 {
+        grid-column: 3 / 5;
+      }
+      #c1 {
+        grid-column: 2 / 2;
       }
 
     </style>
@@ -163,16 +208,34 @@
                 <span class="text">Clasicismo</span>
             </div>
             <div id="wrapper">
-                <div class="container"></div>
-                <div class="container"></div>
-                <div class="container c3"></div>
+                <div class="container" id="c1">
+                    <p>
+                    El clasicismo en la música, que se desarrolló entre mediados del siglo XVIII y principios del siglo XIX,
+                    fue un período de equilibrio y claridad musical. Compositores como Mozart crearon obras que buscaban retomar 
+                    los principios estéticos de la música clásica antigua. 
+                    </p>
+                </div>
+                <div class="container" id="c2">
+                    <p>
+                        Se enfatizó la estructura formal, la claridad melódica y la armonía equilibrada. La música clásica se convirtió en una forma de entretenimiento popular,
+                        y se establecieron las primeras salas de conciertos. Este período dejó un legado duradero en la música occidental.
+                    </p>
+                </div>
+                <div class="container" id="c3">
+                    <ul>
+                        <li>Franz Joseph Haydn: compositor austriaco, una de las figuras más influyentes en el desarrollo de la música del clasicismo</li>
+                        <li>Wolfgang Amadeus Mozart: compositor austriaco del periodo clásico. Uno de los más grandes e influyentes en la historia de la música occidental.
+                            Desde pequeño fue niño prodigio y un genio musical. Se dice que era el compositor perfecto, debido a que en sus borradores casi no se detectaba error alguno.
+                            Se caracterizaba por su estilo sencillo, claro y equilibrado, aunque sin huir de la intensidad emocional.
+                        </li>
+                        <li>
+                            Ludwig van Beethoven: compositor alemán, considerado uno de los más grandes de la cultura occidental.
+                            Sus primeros brotes de talento musical fueron dirigidos de forma tiránica por la disciplina de su padre.
+                            Beethoven ha sido reconocido tanto por sus principios clásicos como por su libertad de expresión, por lo que se le sitúa como el último de los clásicos y el primero de los románticos.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p>
-                Carl Philipp Emanuel Bach (1714-1788), fue un músico y compositor alemán. Es a menudo referido como C. P. E. Bach. Está considerado uno de los fundadores del estilo clásico y uno de los compositores más importantes del periodo galante, aparte de ser el último gran maestro del clave hasta el siglo xx. Carl Philipp Emanuel Bach compuso veintidós Pasiones, dos oratorios, diecinueve sinfonías, quince conciertos, unas doscientas obras de cámara y diversas piezas para teclado, canciones e himnos.
-                Franz Joseph Haydn (1732-1809), compositor austriaco, una de las figuras más influyentes en el desarrollo de la música del clasicismo (c. 1750-1820). En 1755 trabajó para el barón Karl Josef von Fürnberg, época en que compuso sus primeros cuartetos para cuerda. En 1759 fue nombrado director musical del conde Fernando Maximilian von Morzin. Desde 1761 hasta su muerte, trabajó al servicio de los príncipes Esterhazy ―primero Paul Anton y luego Nikolaus―, donde tuvo a su disposición una de las mejores orquestas de Europa.
-                Wolfgang Amadeus Mozart (1756-1791), compositor austriaco del periodo clásico. Uno de los más grandes e influyentes en la historia de la música occidental. Estudió con Leopold Mozart, su padre, conocido violinista y compositor, que trabajaba en la orquesta de la corte del arzobispo de Salzburgo. Desde pequeño fue niño prodigio y un genio musical. Se dice que era el compositor perfecto, debido a que en sus borradores casi no se detectaba error alguno. Se caracterizaba por su estilo sencillo, claro y equilibrado, aunque sin huir de la intensidad emocional. En su enorme producción musical (más de 600 obras, a pesar de su corta vida) destacan, entre muchos otros géneros musicales, sus conciertos para piano y sus óperas.
-                Ludwig van Beethoven (1770-1827), compositor alemán, considerado uno de los más grandes de la cultura occidental. Se formó en un ambiente propicio para el desarrollo de sus facultades aunque excesivamente rígido. Sus primeros brotes de talento musical fueron dirigidos de forma tiránica por la disciplina de su padre, que era tenor en la capilla de la corte. En 1789 Beethoven comenzó a trabajar como músico de la corte para mantener a su familia. Sus primeras obras bajo la tutela del compositor alemán Christian Gottlob Neefe, especialmente la cantata fúnebre por la muerte del emperador José II, mostraban ya una gran inteligencia, y se pensó en la posibilidad de que se fuera a Viena para estudiar con Wolfgang Amadeus Mozart. Aunque la muerte de Mozart en 1791 hizo que estos planes no pudieran realizarse, Beethoven marchó a Viena en el año 1792 para estudiar con el compositor austriaco Joseph Haydn. Beethoven ha sido reconocido tanto por sus principios clásicos como por su libertad de expresión, por lo que se le sitúa como el último de los clásicos y el primero de los románticos.
-            </p>
         </main>
     </div>
     <script src="sidebar.js"></script>

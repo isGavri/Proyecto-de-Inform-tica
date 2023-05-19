@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
     <style>
-      .home-section {
+      body {
         background: url(imagenes/edm.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+      .wrapper {
+        display: flex;
+      }
+      table {
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: auto;
+        margin: auto;
+        table-layout: fixed;
+        font-size: 150%;
+        color: rgba(255, 255, 255, 0.6);
+        border: 3px solid black;
+        border-collapse: collapse;
       }
     </style>
 </head>
@@ -160,6 +174,42 @@
             <div class="home-content">
                 <i class='bx bx-menu' ></i>
                 <span class="text">2010s</span>
+            </div>
+            <div class="wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Streaming de música</td>
+                    <td>La llegada de servicios de streaming como Spotify, Apple Music y Tidal cambió la forma en que se consume la música.</td>
+                  </tr>
+                  <tr>
+                    <td>Música electrónica</td>
+                    <td>La música electrónica se convirtió en un género principal en la década de 2010. Los DJs como Calvin Harris, David Guetta y Avicii se convirtieron en estrellas internacionales.</td>
+                  </tr>
+                  <tr>
+                    <td>Pop</td>
+                    <td>El pop siguió siendo un género popular en la década de 2010. Artistas como Taylor Swift, Bruno Mars y Ariana Grande se convirtieron en algunos de los artistas más populares del mundo.</td>
+                  </tr>
+                  <tr>
+                    <td>Hip hop</td>
+                    <td>El hip hop se convirtió en el género más popular en Estados Unidos en la década de 2010. Artistas como Kendrick Lamar, Drake y Post Malone encabezaron las listas de éxitos.</td>
+                  </tr>
+                  <tr>
+                    <td>La muerte de las tiendas de discos</td>
+                    <td>Con la popularidad del streaming y la descarga digital, las tiendas de discos en todo el mundo comenzaron a cerrar.</td>
+                  </tr>
+                  <tr>
+                    <td>Reuniones y giras de leyendas de la música</td>
+                    <td>En la década de 2010, muchas leyendas de la música se reunieron y salieron de gira.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </main>
         <script src="sidebar.js"></script>
